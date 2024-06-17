@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <body>      
+<header class="main-header">
+    <div class="container container--flex">
+      <div class="main-header__container">
+        <h1 class="main-header__title">COMICFANIA</h1>
+        <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+        <nav class="main-nav" id="main-nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+            <li class="menu__item"><a href="" class="menu__link">NOSOTROS</a></li>
+            <li class="menu__item"><a href="" class="menu__link">DESCRUBRE</a></li>
+            <li class="menu__item"><a href="" class="menu__link">TIENDA</a></li>
+            <li class="menu__item"><a href="" class="menu__link">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__container">
+        <span class="main-header__txt">Consulta</span>
+        <p class="main-header__txt"><i class="fas fa-phone"></i> Llama +56978408368</p>
+      </div>
+      <div class="main-header__container">
+        <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+        <a href="#" class="main-header__btn" id="cart-btn">Carrito <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+        <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Carrito Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close">&times;</span>
+      <h2>Tu Carrito</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+  
+  <div class="container-slider">
+    <div class="slider" id="slider">
+      <div class="slider__section">
+        <img src="/IMAGENES/Deadpool-Rey-Deadpool.jpg" alt="" class="slider__img">
+        <div class="slider__content">
+          <h2 class="slider__title">PACK DE DC-1/3</h2>
+          <p class="slider__txt">$150.000</p>
+          <a href="" class="btn-shop">COMPRAR</a>
+        </div>
+      </div>
+      <div class="slider__section">
+        <img src="/IMAGENES/inicio-comic.jpg" alt="" class="slider__img">
+        <div class="slider__content">
+          <h2 class="slider__title">PACK DE MARVEL 1980</h2>
+          <p class="slider__txt">$134.990</p>
+          <a href="" class="btn-shop">COMPRAR</a>
+        </div>
+      </div>
+      <div class="slider__section">
+        <img src="/IMAGENES/witcher.jpg" alt=" class="slider__img">
+        <div class="slider__content">
+          <h2 class="slider__title"> THE WITCHER</h2>
+          <p class="slider__txt">$17.990</p>
+          <a href="" class="btn-shop">COMPRAR</a>
+        </div>
+      </div>
+      <div class="slider__section">
+        <img src="/IMAGENES/slider4.jpeg" alt="" class="slider__img">
+        <div class="slider__content">
+          <h2 class="slider__title">Última edición</h2>
+          <p class="slider__txt">$38.980</p>
+          <a href="" class="btn-shop">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+  </div>
+  <main class="main">
+    <div class="container">
+      <h2 class="main-title">Lo nuevo llegó</h2>
+      <section class="container-products">
+        <div class="product">
+          <img src="/IMAGENES/slider2.jpeg" alt="" class="product__img">
+          <div class="product__description">
+            <h3 class="product__title">Deadpool-deluxe</h3>
+            <span class="product__price" data-price="90000">$90.000</span>
+          </div>
+          <i class="product__icon fas fa-cart-plus"></i>
+        </div>
+        <div class="product">
+          <img src="/IMAGENES/comic-liga.jpeg" alt="" class="product__img">
+          <div class="product__description">
+            <h3 class="product__title">Liga de la justicia</h3>
+            <span class="product__price" data-price="50100">$50.100</span>
+          </div>
+          <i class="product__icon fas fa-cart-plus"></i>
+        </div>
+        <div class="product">
+          <img src="/IMAGENES/comic-spider.jpeg" alt="" class="product__img">
+          <div class="product__description">
+            <h3 class="product__title">Spider Man</h3>
+            <span class="product__price" data-price="57500">$57.500</span>
+          </div>
+          <i class="product__icon fas fa-cart-plus"></i>
+        </div>
+        <div class="product">
+          <img src="/IMAGENES/comic-xmen.jpeg" alt="" class="product__img">
+          <div class="product__description">
+            <h3 class="product__title">X-Men</h3>
+            <span class="product__price" data-price="32000">$32.000</span>
+          </div>
+          <i class="product__icon fas fa-cart-plus"></i>
+        </div>
+      </section>
+      <section class="container__testimonials">
+        <h2 class="section__title">Testimonials</h2>
+        <h3 class="testimonial__title">Anamaria </h3>
+        <p class="testimonial__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, perferendis, animi! Numquam quasi similique, fuga sint. Nulla veritatis quia nemo, magni, necessitatibus impedit inventore, provident culpa repellat esse a quo.</p>
+      </section>
+    
+      <div class="container-editor">
+        <div class="editor__item">
+          <img src="/IMAGENES/comic-superman.jpeg" alt="" class="editor__img">
+          <p class="editor__circle">Superman</p>
+        </div>
+        <div class="editor__item">
+          <img src="/IMAGENES/slider3.jpeg" alt="" class="editor__img">
+          <p class="editor__circle">Cabllero Luna</p>
+        </div>
+      </div>
+      <section class="container-tips">
+        <div class="tip">
+          <i class="far fa-hand-paper"></i> 
+          <h2 class="tip__title">Nuevo</h2>
+          <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</p>
+          <a href="" class="btn-shop">Comprar ahora</a>
+        </div>
+        <div class="tip">
+         <i class="fas fa-rocket"></i>
+          <h2 class="tip__title">Ofertas</h2>
+          <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          <a href="" class="btn-shop">Comprar ahora</a>
+        </div>
+        <div class="tip">
+          <i class="fas fa-cog"></i>
+          <h2 class="tip__title">Últimas ediciones</h2>
+          <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          <a href="" class="btn-shop">comprar ahora</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer class="main-footer">
+    <div class="container container--flex">
+      <div class="column column--33">
+        <h2 class="column__title">¿Por qué visitarnos?</h2>
+        <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, perferendis, animi! Numquam quasi similique, fuga sint. Nulla veritatis quia nemo, magni, necessitatibus impedit inventore, provident culpa repellat esse a quo.</p>
+      </div>
+      <div class="column column--33">
+        <h2 class="column__title">Contáctanos</h2>
+        <p class="column__txt">Avenida Siempre viva 742</p>
+        <p class="column__txt">Teléfono: +56978408368</p>
+        <p class="column__txt">correo: comiclandia@gmail.com</p>
+      </div>
+      <div class="column column--33">
+        <h2 class="column__title">Siguenos en nuestras redes</h2>
+        <p class="column__txt"><a href="" class="icon-redes"><i class="fab fa-facebook-square"></i></a> Siguenos en Facebook</p>
+        <p class="column__txt"><a href="" class="icon-redes"><i class="fab fa-twitter-square"></i></a> Siguenos en Twitter</p>
+        <p class="column__txt"><a href="" class="icon-redes"><i class="fab fa-youtube-square"></i></a> Siguenos en Youtube</p>
+      </div>
+      <p class="copy">© 2020 Derechos reservados | Comicfania</p>
+    </div>
+  </footer>
+  <script src="/js/slider.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/superheroes.js"></script>
+    </body>
+</html>
